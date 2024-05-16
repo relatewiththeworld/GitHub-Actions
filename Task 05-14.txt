@@ -1,0 +1,40 @@
+Task 1:
+CircleCI / Puppet Enterprise Reviews
+  CircleCI Pros:
+    A. Integrates with Bitbucket, GitHub, and GitHub Enterprise
+    B. Highly customizable
+
+  CircleCI Pros:
+    A. The learning curve is steep for some developers. It has two versions of the software, which sometimes makes it difficult to manage.
+    B. It can go down sometimes, debugging can be a bit hard and cryptic
+
+  Puppet Enterprise Reviews Pros:
+    A. They are always open to help and are very communicative. Plus it is very easy to use and track the changes that were made about anything
+    B. Automatically trigger application builds and continuous integration workflows on any code commit or pull request
+
+  Puppet Enterprise Reviews Pros:
+    A. The interface can be challenging to use as the dashboard is not available.
+    B. It is also a bit hard to learn the software because it uses Ruby language which means you need to have some Ruby knowledge
+
+Task 3:
+    Pros and cons of Blue/Green / Rolling Deployment / Canary.
+
+  BlueGreen:
+    This release management approach aims to achieve continuous improvement within a low downtime. The green environment offers a test environment of the blue environment which is the live environment.
+    A. No need to plan maintenance downtime 
+    B. Blue-green patterns tend to be much safer because the updated instance doesn’t come into contact with any currently running instances. 
+    C. Operational costs can be higher as 2 environments are being run simultaneously
+  Canary:
+  With Canary, a few users are given the production environment of the version to be released. 
+    A. Monitor user feedback and performance metrics for the new version, iterating on any issues that arise.
+    B. The impact of users can vary and doesn't define the precise outcome of the updates when rolled out totally.
+  Rolling Deployment:
+    Here, the updates are gradually pushed out to production in batches and phases.
+    A. It's easier to perform health check what's wrong with a current environment w=before proceeding to the next update.
+    B. it's challenging to manage backward compatibility as the updated and old code are run on the same environment for multiple users. 
+
+Task 5:
+  A case study of Netflix:
+    The most successful streaming service provider in the world, Netflix has built a highly impressive reputation with innovative that has little to no downtime whatsoever. Netflix constantly uses the Canary deployment strategy where a selection of users are selected to experience the proposed updates before it's globally rolled out to all users across. Netflix's codebase is stored in a centralized repository on Github where developers work on feature branches, and changes are reviewed through a pull request process. This ensures that all code changes are thoroughly reviewed and tested before they’re merged into the main codebase.
+
+
